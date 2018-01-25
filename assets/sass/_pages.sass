@@ -1,0 +1,196 @@
+
+@import _map.scss
+@import "bourbon";
+@import "susy";
+
+// shorthand
+$desktop: 12 (60px 40px) split
+$pad: 8 (90px 20px) split
+$mobile: 6 (80px 20px) split
+
+
+
+$w_desktop: 12 split
+$w_pad: 8 split
+$w_mobile: 6 split
+
+$breakpoint_desktop: 1000px
+$breakpoint_pad: 767px
+$breakpoint_mobile: 0px
+
+$susy: (debug: (image: hide))
+
+
+
+.bread_crumbs
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+		padding: 0 20px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		padding-left: 20px
+		font-size: 14px
+		margin-bottom: 10px
+		width: 100%
+		// background: #eee
+		.bread_crumbs_div
+			+span(6)
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			a
+				color: #888
+				margin: 0 10px
+				font-size: 14px
+			p
+				color: #222
+				margin: 0 10px
+				font-size: 14px
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		padding: 0 20px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: flex-start
+		padding-left: 20px
+		font-size: 14px
+		margin-bottom: 20px
+		width: 100%
+
+		// background: #eee
+		.bread_crumbs_div
+			+span(8)
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+
+			a
+				color: #888
+				margin: 0 10px
+				font-size: 14px
+			p
+				color: #222
+				margin: 0 10px
+				font-size: 14px
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		align-items: center
+		padding-left: 0px
+		font-size: 14px
+		margin-bottom: 30px
+		width: 100%
+		margin-top: 20px
+		// background: #eee
+		.bread_crumbs_div
+			// background: #289
+			width: 50%
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			a
+				color: #888
+				margin: 0 10px
+				font-size: 14px
+			p
+				color: #222
+				margin: 0 10px
+				font-size: 14px
+
+
+
+
+
+
+
+.about_site
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 60px
+		.layout_aside
+			+span(3)
+			padding: 0 20px
+			ul
+				li 
+					a 
+						display: block
+						border-bottom: 1px solid #eee
+						padding: 10px 0
+						font-size: 18px
+						font-weight: 900
+						i 
+							margin-right: 10px
+
+
+		.layout_content
+			+span(9)
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #a22a59
+			p 
+				font-size: 16px
+				margin-bottom: 10px
+				font-weight: 400
+			img 
+				margin-bottom: 20px
+
+		
+		.relative_link
+			+span(9)
+			.link_block
+				+span(4)
+				// padding: 10px
+				margin-bottom: 30px
+				position: relative
+				overflow: hidden
+				.mask
+					position: absolute
+					width: 100%
+					height: 20%
+					background: rgba(0,0,0, .6)
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					color: #FFF
+					bottom: 0
+				img
+					display: block
+					width: 100%
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

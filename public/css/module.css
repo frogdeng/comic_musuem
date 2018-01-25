@@ -1324,6 +1324,152 @@ a {
     display: block;
     width: 100%; } }
 
+@media (min-width: 0px) {
+  .column_layout {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+  .column_layout:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 767px) {
+  .column_layout {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto; }
+  .column_layout:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 1000px) {
+  .column_layout {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px; }
+  .column_layout:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .column_layout .aside {
+    width: 30%;
+    float: left;
+    margin-left: 1.66667%;
+    margin-right: 1.66667%;
+    background: #eee; }
+  .column_layout .i_content {
+    width: 63.33333%;
+    float: left;
+    margin-left: 1.66667%;
+    margin-right: 1.66667%; } }
+
+@media (min-width: 0px) {
+  .post_classification_content {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto; }
+  .post_classification_content:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 767px) {
+  .post_classification_content {
+    max-width: 880px;
+    margin-left: auto;
+    margin-right: auto; }
+  .post_classification_content:after {
+    content: " ";
+    display: block;
+    clear: both; } }
+
+@media (min-width: 1000px) {
+  .post_classification_content {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto; }
+  .post_classification_content:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .post_classification_content .filter {
+    border-bottom: 5px solid #eee;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: center;
+    align-items: center; }
+  .post_classification_content .filter .filter_row {
+    margin-right: 25px;
+    font-size: 16px;
+    color: #888; }
+  .post_classification_content .filter .filter_row select {
+    margin-left: 5px;
+    padding: 5px 25px;
+    border: 1px solid #e6e6e6;
+    color: #999;
+    background-color: #fff;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none; }
+  .post_classification_content .select_tag {
+    margin-bottom: 20px; }
+  .post_classification_content .select_tag .tag_item {
+    float: left;
+    margin-right: 20px;
+    background: #F2F9F4;
+    padding: 8px 20px;
+    color: #4A4A4A;
+    font-size: 14px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .post_classification_content .select_tag .tag_item a {
+    display: block;
+    margin-left: 10px;
+    font-size: 16px;
+    transition: all .2s; }
+  .post_classification_content .select_tag .tag_item a:hover {
+    transform: scale(1.2); }
+  .post_classification_content .select_tag .tag_item a i {
+    color: #7ED321; }
+  .post_classification_content .classification_item {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 1px dashed #c0c0c0;
+    padding: 20px 0; }
+  .post_classification_content .classification_item .photo {
+    margin-right: 20px;
+    width: 20%; }
+  .post_classification_content .classification_item .des {
+    width: 80%; }
+  .post_classification_content .classification_item .des h6 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #F5A623;
+    font-weight: 900; }
+  .post_classification_content .classification_item .des p {
+    font-size: 14px; } }
+
 body {
   font-family: Microsoft JhengHei;
   -webkit-font-smoothing: antialiased;

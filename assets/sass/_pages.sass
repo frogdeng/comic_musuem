@@ -183,12 +183,108 @@ $susy: (debug: (image: hide))
 
 
 
+// column_layout
+
+.column_layout
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		margin-bottom: 50px
+		.aside
+			+span(4)
+			background: #eee
+
+		.i_content
+			+span(8)
 
 
 
 
 
 
+.post_classification_content
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.filter
+			border-bottom: 5px solid #eee
+			margin-bottom: 20px
+			padding: 10px 0
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			.filter_row
+				margin-right: 25px
+				font-size: 16px 
+				color: #888
+				select 
+					margin-left: 5px
+					padding: 5px 25px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					-webkit-appearance: none
+
+		.select_tag
+			margin-bottom: 20px
+			.tag_item
+				float: left	
+				margin-right: 20px
+				background: #F2F9F4
+				padding: 8px 20px
+				color: #4A4A4A
+				font-size: 14px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				a
+					display: block
+					margin-left: 10px
+					font-size: 16px
+					transition: all .2s
+					&:hover
+						transform: scale(1.2)
+					i 
+						color: #7ED321
+						
+		.classification_item
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			border-bottom: 1px dashed #c0c0c0
+			padding: 20px 0
+			.photo
+				margin-right: 20px
+				width: 20%
+
+			.des
+				width: 80%
+				h6 
+					font-size: 20px
+					margin-bottom: 10px
+					color: #F5A623
+					font-weight: 900
+				p 
+					font-size: 14px
 
 
 

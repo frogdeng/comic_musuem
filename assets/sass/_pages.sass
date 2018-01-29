@@ -534,8 +534,11 @@ $susy: (debug: (image: hide))
 
 
 
+
+
+
+
 .works_classification
-	
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
 
@@ -549,14 +552,93 @@ $susy: (debug: (image: hide))
 		margin-bottom: 140px
 		.works_column
 			+span(4)
-			.works_l
-				height: 500px
+			.works
 				background: #189
 				margin-bottom: 20px
-			.works_s
-				height: 400px
-				background: #189
-				margin-bottom: 20px
+				position: relative
+				overflow: hidden
+				cursor: pointer
+				transition: all .2s
+
+				.photo-i
+					position: absolute
+					width: 100%
+				.mask_i 
+					position: absolute
+					width: 100%
+					height: 15%
+					padding: 18px
+					background: rgba(0,0,0,.5)
+					z-index: 1600
+					bottom: 0
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					transition: all .3s
+					p 
+						font-size: 20px
+						color: #FFF
+				&:hover
+					.mask_i
+						background: rgba(0,0,0,.8)	
+						height: 89%
+
+
+
+.h-h
+	height: 500px
+.h-s
+	height: 400px
+	
+
+
+
+
+.theme_intro
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		h4
+			font-size: 30px
+			color: #DB5106
+			margin-bottom: 20px
+			margin-top: 20px
+			font-weight: 900
+		h6 
+			font-size: 15px
+			color: #222
+			line-height: 1.6
+		p 
+			font-size: 16px
+			margin-bottom: 8px
+
+
+
+
+.theme_works
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.works_col
+			+span(4)
+			.works_img
+				width: 100%
+				cursor: pointer
 
 
 
@@ -564,12 +646,72 @@ $susy: (debug: (image: hide))
 
 
 
+.lightbox_a
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		.detail_item
+			padding: 40px 30px
+			// background-color: #489
+			display: flex
+			flex-direction: row
+			align-items: center
+			justify-content: flex-start
+			.detail_img
+				margin-right: 30px
+				img
+					margin-bottom: 10px
+			.detail_des
+				h6
+					font-size: 28px
+					line-height: 1.4
+					margin-bottom: 10px
+					color: #17317c
+					text-align: left
+					color: #FFF
+			
+				p
+					width: 100%
+					font-size: 15px
+					line-height: 1.6
+					margin-bottom: 3px
+					color: #231815
+					text-align: left
+					color: #FFF
 
 
 
 
+.icon-close
+	position: absolute
+	padding: 0
+	top: 30px
+	right: 15px
+	width: 30px
+	height: 30px
+	border-radius: 50%
+	border: none
+	color: #FFF
+	background: none
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	outline: none
+	i
+		font-size: 30px
+		color: #999
 
 
+.iziModal
+	background: rgba(0,0,0,0) !important
 
 
 

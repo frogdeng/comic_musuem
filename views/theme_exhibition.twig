@@ -1,0 +1,106 @@
+{# index.twig #}
+{# index.twig #}
+{% extends "/_template/layout.twig" %}
+
+{% block page %}
+
+
+
+{% include '_partial/inside_hero.twig' %}
+
+
+
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> > <a href=""> 關於本站 </a> > <p>主題特展</p></div>
+</div>
+
+<div class="t-title">
+	<h2><i class="fa fa-cube" aria-hidden="true"></i> 主題特展</h2>
+</div>
+
+
+
+	
+	<div class="column_layout">
+		<div class="i_aside">
+			<div class="top-line"></div>
+			<div class="theme_intro">
+				<h4>YOUNG GUNS</h4>
+
+				<h6>出版社：中國時報</h6>
+				<h6>作者：林政德漫畫作品</h6>
+				<h6>出版日期：1988/3/19</h6>
+				<br>
+				<p>《YOUNG GUNS》是台灣漫畫家林政德的代表作品，內容主要為青春校園生活與棒球社團故事，最初開始於1990年10月在《星期漫畫》雜誌上連載，後以漫畫單行本出版發行，前後歷時 20 年共發行 12 本，創下台灣漫畫最高數百萬冊銷售量，曾被改編為電視動畫以及製作成DOS用電腦遊戲《YOUNG GUNS大富翁》。</p>
+				<p>高一學生袁建平某天在校車上見到了美麗的學姐蘇慧文，令他一見鍾情，決定每天都搭校車通學。此外又在一次欺負事件中認識了蘇慧文的國中同學楊日輝，而害羞的楊日輝也無法忘懷這位美麗溫柔的國中同學，再加上留級生阿諾及班花陳玳雅。</p>
+				<p>豔福不淺的袁建平在一次因緣際會下與有名的──紀幼蘭相約看球賽，然而這次愉快的約會卻給他惹來了大麻煩。綽號「瀟灑」的三年級學長對她相當傾心，和瀟灑手下有過節的楊日輝以及與二年級學長不合的張士朋。但是這群二年級的黑道份子卻被袁建平耍得團團轉，學長勇伯更是被張士朋修理得慘兮兮，楊日輝則因故掛彩。</p>
+			</div>
+
+		</div>
+		<div class="i_content">
+			<div class="theme_works">
+				<div class="works_col">
+					<div class="works_img" data-iziModal-open="#modal-a"><img src="img/link_01.jpg" alt=""></a></div>
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+				</div>
+				<div class="works_col">
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+				</div>
+				<div class="works_col">
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+				</div>
+				
+
+
+
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+<div id="modal-a" class="iziModal"  >
+ <button data-iziModal-close class="icon-close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+		<div class="lightbox_a">
+			<div class="top-line"></div>
+			<div class="detail_item">
+				<div class="detail_img">
+					<img src="img/book_01.jpg" alt="">
+				</div>
+
+				<div class="detail_des">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。
+				無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。
+				</p>
+				</div>
+			</div>
+			<div class="top-line"></div>
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+{% endblock %}

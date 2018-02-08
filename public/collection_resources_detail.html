@@ -14,11 +14,14 @@
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
 <link rel="stylesheet" href="css/iziModal.css">
+
+<link rel="stylesheet" href="css/magnific-popup.css">
 <link rel="stylesheet" href="css/module.css">
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/iziModal.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/ui.js"></script>
 
 
@@ -52,7 +55,7 @@
 	$(function(){
 		 $(".iziModal").iziModal({
 		 	  title: '',
-			  width: 1000,
+			  width: 800,
 			  radius: 0,
 			  overlayColor: 'rgba(0, 0, 0, 0.9)',
 			  closeOnEscape: true,
@@ -60,7 +63,16 @@
 			});
 	})
 </script>
-=
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
 </head>
 
 <body>
@@ -111,13 +123,75 @@
 						<a href="">展覽資訊</a>
 					</li>
 					<li>
-						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+						<a href="#popup_1" class="advance_search open-popup-link"><i class="fa fa-search" aria-hidden="true"></i></a>
 					</li>
 
 				</ul>
 			</div>
 		</div>
 		
+
+<div id="popup_1" class="open-popup-link show_contnet_01 mfp-hide">
+	
+	<div class="simple-search">
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作者
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作品
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	   
+	   <br>
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />精確
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />模糊
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />同義
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div>
+	    <a href="" class="submit">查詢</a>
+	</div>
+</div>
+
+
+
 
 		<!-- hamburg -->
 		
@@ -218,6 +292,7 @@
 				</div>
 			</div>
 		</div>
+
 	</div>
 
 

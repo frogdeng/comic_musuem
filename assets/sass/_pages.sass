@@ -727,5 +727,80 @@ $susy: (debug: (image: hide))
 
 
 
+.simple-search
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 40px	
+		background: #FFF
+		max-width: 800px
+		.search_area
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			input[type=text]
+				width: 80%
+				margin-right: 8px
+			select
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.select_area
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 30px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			select
+				width: 150px
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.seach_type
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			.seach_type_item
+				margin-right: 20px
+				font-size: 16px
+				color: #888
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				input[type=checkbox]
+					margin-right: 8px
+		.submit
+			width: 200px
+			height: 40px
+			background: #4A90E2
+			display: flex
+			justify-content: center	
+			align-items: center	
+			color: #FFF
+			border-radius: 3px
+
+
+
+
+
 
 

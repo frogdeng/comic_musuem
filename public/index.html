@@ -14,11 +14,14 @@
 <link rel="stylesheet" href="css/slick.css">
 <link rel="stylesheet" href="css/slick-theme.css">
 <link rel="stylesheet" href="css/iziModal.css">
+
+<link rel="stylesheet" href="css/magnific-popup.css">
 <link rel="stylesheet" href="css/module.css">
 
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/iziModal.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/ui.js"></script>
 
 
@@ -52,7 +55,7 @@
 	$(function(){
 		 $(".iziModal").iziModal({
 		 	  title: '',
-			  width: 1000,
+			  width: 800,
 			  radius: 0,
 			  overlayColor: 'rgba(0, 0, 0, 0.9)',
 			  closeOnEscape: true,
@@ -60,7 +63,16 @@
 			});
 	})
 </script>
-=
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
 </head>
 
 <body>
@@ -111,13 +123,75 @@
 						<a href="">展覽資訊</a>
 					</li>
 					<li>
-						<a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+						<a href="#popup_1" class="advance_search open-popup-link"><i class="fa fa-search" aria-hidden="true"></i></a>
 					</li>
 
 				</ul>
 			</div>
 		</div>
 		
+
+<div id="popup_1" class="open-popup-link show_contnet_01 mfp-hide">
+	
+	<div class="simple-search">
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作者
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作品
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	    <div class="search_area">
+	        <p>請輸入查詢值</p>
+	        <input type="text">
+	    </div>
+	   
+	   <br>
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />精確
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />模糊
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />同義
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div>
+	    <a href="" class="submit">查詢</a>
+	</div>
+</div>
+
+
+
 
 		<!-- hamburg -->
 		
@@ -181,18 +255,20 @@
 	<div class="index_event">
 		<div class="index_event_block">
 			<div class="index_event_col_1">
-				<h6>線上特展 <br> EVENTS</h6>
+				<h6>本站簡介 <br> Introduction </h6>
 
 				<div class="straight">
 					<div class="line"></div>
 				</div>
 
-				<p>《諸葛四郎》是台灣漫畫家葉宏甲開始於1958年《漫畫大王》其畫風簡單、劇情緊湊，受到當時台灣小孩子的歡迎。在當紅時曾二度拍攝成電影，以及在80年代拍攝成電視劇。</p>
+				<p>《台第一座國家漫畫博物館即將在台中市誕生！市府推動影視及動漫發展，文化部挹注4.45億元預算，在中台灣電影中心合建「國家漫畫博物館」，市長林佳龍與文化部長鄭麗君28日正式簽署合作備忘錄；新聞局長卓冠廷表示，文化部將持續挹注7.05億元充實設施及館藏。</p>
 			</div>
 
 			<div class="index_event_col_2">
 				<div class="event_a">
-					<div class="mask opacity_grey">
+					<div class="recommend_mask opacity_grey">
+						<h6>諸葛四郎</h6>
+						<div class="r-line"></div>
 						<p>《諸葛四郎》是台灣漫畫家葉宏甲開始於1958年《漫畫大王》其畫風簡單、劇情緊湊。</p>
 					</div>
 					<div class="i-image">
@@ -204,7 +280,9 @@
 
 			<div class="index_event_col_3">
 				<div class="event_a">
-					<div class="mask opacity_red">
+					<div class="recommend_mask opacity_red">
+						<h6>諸葛四郎</h6>
+						<div class="r-line"></div>
 						<p>《諸葛四郎》是台灣漫畫家葉宏甲開始於1958年《漫畫大王》其畫風簡單、劇情緊湊。</p>
 					</div>
 					<div class="i-image">
@@ -214,7 +292,10 @@
 				</div>
 
 				<div class="event_a">
-					<div class="mask opacity_grey">
+					<div class="recommend_mask opacity_grey">
+						<h6>諸葛四郎</h6>
+						<div class="r-line"></div>
+
 						<p>《諸葛四郎》是台灣漫畫家葉宏甲開始於1958年《漫畫大王》其畫風簡單、劇情緊湊。</p>
 					</div>
 					<div class="i-image">
@@ -224,7 +305,9 @@
 				</div>
 
 				<div class="event_a">
-					<div class="mask opacity_green">
+					<div class="recommend_mask opacity_green">
+						<h6>諸葛四郎</h6>
+						<div class="r-line"></div>
 						<p>《諸葛四郎》是台灣漫畫家葉宏甲開始於1958年《漫畫大王》其畫風簡單、劇情緊湊。</p>
 					</div>
 					<div class="i-image">
@@ -255,7 +338,7 @@
 		</div>
 
 		<div class="new_news">
-			<h6>相關新聞</h6>
+			<h6>訊息公告</h6>
 			<a href="" class="news_item">11/24 《青春如屍》沒談過戀愛的少女漫畫家</a>
 			<a href="" class="news_item">11/24 《伊藤潤二精選》電視動畫發布參演聲優 綠川光飾演！</a>
 			<a href="" class="news_item">11/22 《從二樓下來的老師》在教室、在家裡，都</a>
@@ -274,13 +357,13 @@
 			<a href="">
 				<div class="circle_i">
 					<img src="img/circle_icon_1.png" alt="">
-					漫畫家瀏覽
+					今日漫畫家
 				</div>
 			</a>
 			<a href="">
 				<div class="circle_i">
 					<img src="img/circle_icon_2.png" alt="">
-					年代瀏覽
+					漫畫大事紀
 				</div>
 			</a>
 			<a href="">

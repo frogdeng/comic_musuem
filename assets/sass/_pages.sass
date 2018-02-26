@@ -800,6 +800,193 @@ $susy: (debug: (image: hide))
 
 
 
+.chronology_wrapper
+	padding: 30px 0
+	position: relative
+	.dot_line
+		position: absolute
+		width: 100%
+		height: 13px
+		background: url('../img/dot_line.png')
+		top: 117px
+
+
+.chronology
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 40px
+		.chronology_top
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			justify-content: space-between
+			margin-bottom: 14px
+			h6
+				font-size: 22px
+				line-height: 1.4
+				color: #888
+				text-align: left
+			.filter_year
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				select
+					height: 33px
+					margin: 0 10px
+					padding: 5px 25px
+					font-size: 15px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					// appearance: none
+
+
+
+		.chronology_section
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			justify-content: flex-start
+			position: relative
+			.left_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				left: -50px
+
+			.right_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				right: -50px
+
+			.chronology_column
+				width: 25%
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				.top_color
+					width: 100%
+					height: 13px
+				.chronology_date
+					width: 100%
+					height: 70px
+					padding: 10px 20px
+					margin-bottom: 8px
+					h4 
+						font-size: 25px
+						line-height: 1.2
+					h5 
+						font-size: 14px	
+				.chronology_content
+					width: 100%
+					padding-right: 40px
+					img 
+						height: 140px
+					p 
+						font-size: 13px
+
+
+
+
+.c_orange
+	.top_color
+		background: url('../img/slash.png') #F5A623
+	.chronology_date
+		border-left: 1px solid #F5A623
+		h4 
+
+			color: #F5A623
+		h5 
+			color: #F5A623
+
+
+.c_cyan
+	.top_color
+		background: url('../img/slash.png') #50E3C2
+	.chronology_date
+		border-left: 1px solid #50E3C2
+		h4 
+
+			color: #50E3C2
+		h5 
+			color: #50E3C2
+
+.c_blue
+	.top_color
+		background: url('../img/slash.png') #01AECC
+	.chronology_date
+		border-left: 1px solid #01AECC
+		h4 
+
+			color: #01AECC
+		h5 
+			color: #01AECC
+
+
+.c_red
+	.top_color
+		background: url('../img/slash.png') #DB5106
+	.chronology_date
+		border-left: 1px solid #DB5106
+		h4 
+
+			color: #DB5106
+		h5 
+			color: #DB5106
+
+
+.c_green
+	.top_color
+		background: url('../img/slash.png') #5AB331
+	.chronology_date
+		border-left: 1px solid #5AB331
+		h4 
+
+			color: #5AB331
+		h5 
+			color: #5AB331
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

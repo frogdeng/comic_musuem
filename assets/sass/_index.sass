@@ -195,7 +195,7 @@ $susy: (debug: (image: hide))
 			bottom: -46px
 			display: flex
 			flex-direction: row
-			justify-content: center
+			justify-content: flex-end
 			align-items: center
 			.circle_link_btn
 				width: 86px
@@ -209,8 +209,10 @@ $susy: (debug: (image: hide))
 				flex-direction: column
 				justify-content: center
 				align-items: center
-				i 
+				svg 
 					margin-bottom: 5px
+				i 
+					margin-bottom: 15px
 					font-size: 20px
 
 
@@ -947,9 +949,16 @@ footer
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
-		padding: 0 30px
+		padding: 40px 30px
 
 		.links_right
+			.footer_link
+				margin-left: 10px
+				margin-bottom: 40px	
+				a 
+					margin-right: 20px
+					font-size: 18px
+					color: #4A90E2
 			.links_s
 				+span(1.7)
 				margin-bottom: 20px

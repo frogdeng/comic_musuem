@@ -2008,16 +2008,19 @@ a {
     line-height: 1.2;
     font-weight: 900; }
   .post_classification_content .classification_item_block .des .text_section {
-    background: #eee;
     margin-bottom: 10px; }
   .post_classification_content .classification_item_block .des .text_section p {
+    font-size: 14px;
+    color: #888;
     overflow: hidden;
-    height: 100px;
-    white-space: nowrap;
     text-overflow: ellipsis;
+    display: -webkit-box;
     -webkit-line-clamp: 5; }
-  .post_classification_content .classification_item_block .des .text_section .des_info {
-    margin-top: 10px; } }
+  .post_classification_content .classification_item_block .des .des_info {
+    margin-top: 10px;
+    font-size: 14px; }
+  .post_classification_content .classification_item_block .des .des_info p {
+    color: #222; } }
 
 .i_red {
   color: #E6322E; }

@@ -60,8 +60,20 @@ $susy: (debug: (image: hide))
 					display: block
 					color: #FFF
 					font-size: 13px
-
-
+				
+			.log_section
+				width: 80px
+				height: 25px
+				background: #ff7b7b
+				border-radius: 50px
+				margin-left: 10px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				a
+					color: #FFF
+					font-size: 14px
 
 
 
@@ -186,38 +198,133 @@ $susy: (debug: (image: hide))
 						font-size: 15px
 						color: #FFF
 
+	
+
+
+.main_image_inside_wrapper
+	background: url('../img/inside_main_image.jpg') center
+	background-size: cover
+	background-repeat: no-repeat
+.main_image_inside
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+		
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		position: relative
+		.main_slider_inside
+			height: 200px
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			
 		.circle_link
 			position: absolute
 			width: 400px
 			height: 100px
 			// background: #289
-			right: 5%
+			right: 0%
 			bottom: -46px
 			display: flex
 			flex-direction: row
 			justify-content: flex-end
 			align-items: center
 			.circle_link_btn
-				width: 86px
-				height: 86px
+				display: block
+				width: 80px
+				height: 80px
 				margin: 0 15px
 				background: #FFF
 				border-radius: 50%
 				font-size: 14px
+				font-weight: 900
+				cursor: pointer
 				border: 1px solid #c0c0c0
 				display: flex
 				flex-direction: column
 				justify-content: center
 				align-items: center
+				transition: all .3s
 				svg 
 					margin-bottom: 5px
 				i 
 					margin-bottom: 15px
 					font-size: 20px
+				&:hover
+					background: #c0c0c0
+					color: #FFF
+					transform: scale(1.06)
+					p 
+						color: #FFF
 
 
-			
 
+
+.search_section_insidepage
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+	
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		width: 60%
+		height: 48px
+		display: flex
+		flex-direction: row
+		justify-content: center
+		align-items: center
+		.fun_sec
+			width: 85%
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			background: #FFF	
+			border: 1px solid #c0c0c0
+			border-right: none
+			border-radius: 3px 0 0 3px
+			.icon
+				width: 50px
+				color: #999
+				text-align: center
+			input
+				height: 46px
+				width: 500px
+				border: none
+				outline: none
+				&::placeholder
+					color: #c0c0c0
+
+			.fun_sec_i
+				width: 28px
+				height: 28px
+				border: 2px solid #d1d1d1
+				color: #d1d1d1
+				margin: 0 15px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+
+		.btn
+			width: 15%
+			height: 48px
+			background: #4A90E2
+			display: flex
+			flex-direction: row
+			justify-content: center
+			align-items: center
+			color: #FFF
+			cursor: pointer
 
 
 
@@ -335,7 +442,6 @@ $susy: (debug: (image: hide))
 			color: #FFF
 			cursor: pointer
 			
-
 
 
 

@@ -19,6 +19,7 @@
 <link rel="stylesheet" href="css/iziModal.css">
 
 <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/demo.css">
 <link rel="stylesheet" href="css/module.css">
 
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -58,17 +59,54 @@
 	$(function(){
 		 $(".iziModal").iziModal({
 		 	  title: '',
-			  width: 800,
+			  width: 600,
 			  radius: 0,
 			  overlayColor: 'rgba(0, 0, 0, 0.9)',
 			  closeOnEscape: true,
-              closeButton: true,
+		      closeButton: true,
 			});
-	})
+	})	
+
+	$(function(){
+		 $(".iziModal_search").iziModal({
+		 	  title: '進階搜尋',
+			  width: 900,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})	
+
+	// $(function(){
+	//  $(".iziModal_search").iziModal({
+	//  	  title: '',
+	// 	  width: 600,
+	// 	  radius: 0,
+	// 	  overlayColor: 'rgba(0, 0, 0, 0.9)',
+	// 	  closeOnEscape: true,
+ //          closeButton: true,
+	// 	});
+	// })
+
+
+
+
+
+
 </script>
+
+
 <script>
 	$(function(){
 		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+	$(function(){
+		$('.open-popup-link2').magnificPopup({
 		  type:'inline',
 		  midClick: true 
 		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
@@ -91,8 +129,8 @@
 				<li><a href="#">意見信箱</a></li>				
 				<li class="lil"></li>
 
-				<div class="log_section">
-					<a href="#popup_1" class="advance_search open-popup-link">登入</a>
+				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
+					
 				</div>	
 	
 			</ul>
@@ -138,62 +176,95 @@
 		</div>
 		
 
-<div id="popup_1" class="show_contnet_01 mfp-hide">
-	
+
+
+<div id="modal-custom" class="iziModal">
+	<div class="login_section">
+        <button data-izimodal-close="" class="icon-close" style="">X</button>
+        <header>
+            <a href="" id="signin" class="active">Sign in</a>
+            <a href="" class="">New Account</a>
+        </header>
+        <div class="sections">
+                <section class="hide" style="display: none;" >
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <footer>
+                        <button data-izimodal-close="">Cancel</button>
+                        <button class="submit">Log in</button>            
+                    </footer>
+                </section>
+                <section style="display: block;">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u>.</label>
+                    <footer>
+                        <button data-izimodal-close="" data-izimodal-transitionout="bounceOutDown">Cancel</button>
+                        <button class="submit">Create Account</button>
+                    </footer>
+                </section>
+        	</div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="modal-search" class="iziModal_search">
+	        <button data-izimodal-close="" class="icon-close" style="">X</button>
+
 	<div class="simple-search">
-	    
-	    <div class="search_area">
-	        <p>User Name</p>
-	        <input type="text">
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作者
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作品
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
 	    </div>
 	    <div class="search_area">
-	        <p>Pass Word</p>
-	        <input type="text">
+	        <input type="text" placeholder="請輸入查詢值">
 	    </div>
-	    
-	   
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	    </div>
 	   
 	    <div class="seach_type">
 	        <div class="seach_type_item">
 	            <label class="control control--checkbox">
-	                <input type="checkbox" checked="checked" />記住密碼
+	                <input type="checkbox" checked="checked" />精確
 	                <div class="control__indicator"></div>
 	            </label>
 	        </div>
-	        
-	        
-	    </div>
-	    <a href="" class="submit">登入</a>
-	</div>
-</div>
-
-
-<div id="popup_2" class="show_contnet_01 mfp-hide">
-	
-	<div class="simple-search">
-	    
-	    <div class="search_area">
-	        <p>User Name</p>
-	        <input type="text">
-	    </div>
-	    <div class="search_area">
-	        <p>Pass Word</p>
-	        <input type="text">
-	    </div>
-	    
-	   
-	   
-	    <div class="seach_type">
 	        <div class="seach_type_item">
 	            <label class="control control--checkbox">
-	                <input type="checkbox" checked="checked" />記住密碼
+	                <input type="checkbox" checked="checked" />模糊
 	                <div class="control__indicator"></div>
 	            </label>
 	        </div>
-	        
-	        
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />同義
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
 	    </div>
-	    <a href="" class="submit">登入</a>
+	    <a href="" class="submit">查詢</a>
 	</div>
 </div>
 
@@ -263,15 +334,15 @@
 
 <div class="search_section_wrapper">
 	<div class="search_section">
-
 		<div class="fun_sec">
 			<div class="icon"><i class="fas fa-search"></i></div>
 			<input type="text" placeholder="館藏查詢">
-			<a href="#popup_2" class="fun_sec_i advance_search open-popup-link"><i class="fas fa-sliders-h"></i></a>
-		</div>
-		
-		<div class="btn">搜尋</div>
+			<div class="fun_sec_i trigger-custom" data-iziModal-open="#modal-search">
+			<i class="fas fa-sliders-h"></i>
+			</div>
 
+		</div>
+		<div class="btn">搜尋</div>
 	</div>
 </div>
 

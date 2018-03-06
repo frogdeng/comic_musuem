@@ -67,13 +67,51 @@ $susy: (debug: (image: hide))
 				background: #ff7b7b
 				border-radius: 50px
 				margin-left: 10px
+				color: #FFF
+				font-size: 14px
 				display: flex
 				flex-direction: row
 				justify-content: center
 				align-items: center
-				a
-					color: #FFF
-					font-size: 14px
+				cursor: pointer
+
+
+
+.login_section
+	background: #FFF
+	position: relative
+	// .icon-close
+	// 	background: #FFF
+	// 	margin-bottom: 10px
+	// 	position: absolute
+	// 	right: -8px
+	// 	top: -8px
+	// 	font-size: 14px
+	// 	font-weight: bold
+	// 	border-radius: 50%
+	// 	width: 30px
+	// 	height: 30px
+	// 	border: 0
+	// 	color: #a9a9a9
+	// 	cursor: pointer
+	// 	border: 2px solid #eee
+
+	// header
+	// 	a 
+	// 		display: block
+	// 		float: left
+	// 		width: 50%
+	// 		padding: 0
+	// 		text-align: center
+	// 		background: #ddd
+	// 		color: #999
+	// 		height: 65px
+	// 		vertical-align: middle
+	// 		line-height: 65px
+	// 		font-family: 'Lato', arial
+	// 		font-size: 15px
+	// 		transition: all 0.3s ease
+
 
 
 
@@ -306,6 +344,7 @@ $susy: (debug: (image: hide))
 
 			.fun_sec_i
 				display: block
+				cursor: pointer
 				width: 28px
 				height: 28px
 				border: 2px solid #d1d1d1
@@ -315,6 +354,7 @@ $susy: (debug: (image: hide))
 				flex-direction: row
 				justify-content: center
 				align-items: center
+
 
 		.btn
 			width: 15%
@@ -381,6 +421,7 @@ $susy: (debug: (image: hide))
 	flex-direction: row
 	justify-content: center
 	align-items: center
+	background: #FFF
 
 .search_section
 	+susy-breakpoint($breakpoint_mobile, $mobile)
@@ -431,6 +472,12 @@ $susy: (debug: (image: hide))
 				flex-direction: row
 				justify-content: center
 				align-items: center
+				cursor: pointer
+				transition: all .1s
+				&:hover
+					transform: scale(1.05)
+					color: #4A90E2
+					border: 2px solid #4A90E2
 
 		.btn
 			width: 120px

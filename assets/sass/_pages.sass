@@ -776,7 +776,6 @@ $susy: (debug: (image: hide))
 
 
 
-
 .simple-search
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
@@ -788,7 +787,7 @@ $susy: (debug: (image: hide))
 		+container
 		padding: 40px	
 		background: #FFF
-		max-width: 500px
+		
 		.search_area
 			display: flex
 			flex-direction: row
@@ -800,8 +799,11 @@ $susy: (debug: (image: hide))
 				color: #888
 				margin-right: 10px
 			input[type=text]
-				width: 60%
-				margin-right: 8px
+				width: 100%
+				padding: 5px 10px
+				&::placeholder
+					color: #c0c0c0
+					font-size: 14px
 			select
 				margin-right: 8px
 				height: 30px
@@ -847,6 +849,11 @@ $susy: (debug: (image: hide))
 			align-items: center	
 			color: #FFF
 			border-radius: 3px
+
+
+
+
+
 
 
 

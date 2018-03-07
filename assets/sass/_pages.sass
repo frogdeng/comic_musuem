@@ -799,16 +799,27 @@ $susy: (debug: (image: hide))
 				color: #888
 				margin-right: 10px
 			input[type=text]
-				width: 100%
-				padding: 5px 10px
+				width: 70%
+				padding: 0px 10px
+				height: 35px
 				&::placeholder
 					color: #c0c0c0
 					font-size: 14px
 			select
-				margin-right: 8px
-				height: 30px
+				width: 10%
+				height: 35px
+				padding: 5px 25px
 				font-size: 14px
-				color: #888
+				border: 1px solid #e6e6e6
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				margin-left: 1%
+				// appearance: none
+
+
+
 
 		.select_area
 			display: flex
@@ -1110,6 +1121,114 @@ $susy: (debug: (image: hide))
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
+
+
+
+
+.pure_text
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		// padding: 0 20px
+		margin-bottom: 100px
+		.pure_text_menu
+			+span(3)
+				ul 
+					li 
+						a 
+							display: block
+							padding: 10px 10px
+							border-bottom: 1px dashed #c0c0c0
+							transition: all .3s
+							font-size: 14px
+							&:hover
+								color: #4A90E5
+								border-bottom: 3px solid #4A90E5
+
+		.pure_text_contnet
+			+span(9)
+			h1 
+				font-size: 25px
+				margin-bottom: 20px
+				color: #4A90E5
+			h2 
+				font-size: 18px
+				margin-bottom: 10px
+				color: #222
+				margin-top: 40px
+			p 
+				font-size: 14px
+				color: #888
+				line-height: 1.5
+				margin-bottom: 10px
+			.qa_list
+				border-bottom: 1px dashed #c9c9c9
+				margin-bottom: 20px
+			.l-l
+				width: 100%
+				height: 3px
+				background: #4A90E5
+
+
+
+
+.bulletin
+	+susy-breakpoint($breakpoint_mobile, $mobile)
+		+container
+
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 0 20px	
+		margin-bottom: 120px
+
+		h2 
+			font-size: 23px
+			margin-bottom: 10px
+			color: #4A90E2
+		p 
+			font-size: 15px
+			color: #888
+			line-height: 1.5
+			margin-bottom: 10px
+		.new_news
+			+span(3)
+			border: 1px solid #eee
+			padding: 10px
+			h6 
+				font-size: 18px
+				color: #222
+				margin-bottom: 10px
+				padding-bottom: 5px
+				border-bottom: 2px solid #888
+			.news_item
+				display: block
+				font-size: 14px
+				margin-bottom: 10px
+				padding: 5px 0
+				border-bottom: 1px solid #eee
+				transition: all .3s
+				&:hover
+					color: #222
+
+		.bulletin_detail
+			+span(9)
+			.l-l
+				width: 100%
+				height: 3px
+				background: #bad0ea
+				margin-bottom: 20px
 
 
 

@@ -54,12 +54,12 @@ p{
 *:after,
 *::before{box-sizing:border-box; -ms-box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 
-body{
+/*body{
   font-family: arial;
   background: #F0F2F1;
   overflow-x:hidden;
   position: relative;
-}
+}*/
 .overflow-hidden{
   overflow: hidden !important;
 }

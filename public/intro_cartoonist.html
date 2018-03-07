@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="/favicon.ico" />
+<meta name="keywords" content="">
+<meta name="description" content="">
+<title>漫畫博物館</title>
+
+
+<!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+<script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+<link rel="stylesheet" href="css/slick.css">
+<link rel="stylesheet" href="css/slick-theme.css">
+<link rel="stylesheet" href="css/iziModal.css">
+
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/demo.css">
+<link rel="stylesheet" href="css/module.css">
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/iziModal.min.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/ui.js"></script>
+
+
+<script>
+	$(document).on('ready', function() {
+		$(".main").slick({
+			dots: true,
+			infinite: true,
+			arrows: false,
+			adaptiveHeight: true
+		});
+
+		$(".ad_banner").slick({
+			dots: true,
+			adaptiveHeight: true,
+			infinite: true
+		});
+
+		$(".moreShow").slick({
+			dots: false,
+			adaptiveHeight: true,
+			infinite: true,
+			slidesToShow: 4,
+  			slidesToScroll: 4
+		});
+
+	});
+
+</script>
+<script>
+	$(function(){
+		 $(".iziModal").iziModal({
+		 	  title: '',
+			  width: 600,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})	
+
+	$(function(){
+		 $(".iziModal_search").iziModal({
+		 	  title: '進階搜尋',
+			  width: 900,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})	
+
+	// $(function(){
+	//  $(".iziModal_search").iziModal({
+	//  	  title: '',
+	// 	  width: 600,
+	// 	  radius: 0,
+	// 	  overlayColor: 'rgba(0, 0, 0, 0.9)',
+	// 	  closeOnEscape: true,
+ //          closeButton: true,
+	// 	});
+	// })
+
+
+
+
+
+
+</script>
+
+
+<script>
+	$(function(){
+		$('.open-popup-link').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+	$(function(){
+		$('.open-popup-link2').magnificPopup({
+		  type:'inline',
+		  midClick: true 
+		  // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+		});
+	});
+</script>
+
+</head>
+
+<body>
+	<div class="top_header">
+		<div class="top_header_menu">
+			<ul>
+				<li><a href="#">網站導覽</a></li>
+				<li class="lil"></li>
+				<li><a href="#">公告資訊</a></li>
+				<li class="lil"></li>
+				<li><a href="#">常見問題</a></li>
+				<li class="lil"></li>
+				<li><a href="#">意見信箱</a></li>				
+				<li class="lil"></li>
+
+				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
+					
+				</div>	
+	
+			</ul>
+
+		</div>
+	</div>
+
+
+
+	<div class="main_menu">
+		<div class="desktop_menu">
+
+			<div class="logo"><img src="img/logo.png" alt=""></div>
+			<div class="deskmenu">
+				<ul>
+					<li>
+						<a href="">關於本站</a>
+						
+					</li>
+					<li>
+						<a href="">館藏資源</a>
+						
+					</li>
+					<li>
+						<a href="">主題特展</a>
+						
+					</li>
+					<li>
+						<a href="">跨界行銷</a>
+						
+					</li>
+					<li>
+						<a href="">互動資源</a>
+						
+					</li>
+					<li>
+						<a href="">展覽資訊</a>
+					</li>	
+					<li>
+						<a href="">全站檢索</a>
+					</li>
+					
+
+				</ul>
+			</div>
+		</div>
+		
+
+
+
+<div id="modal-custom" class="iziModal">
+	<div class="login_section">
+        <button data-izimodal-close="" class="icon-close" style="">X</button>
+        <header>
+            <a href="" id="signin" class="active">Sign in</a>
+            <a href="" class="">New Account</a>
+        </header>
+        <div class="sections">
+                <section class="hide" style="display: none;" >
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <footer>
+                        <button data-izimodal-close="">Cancel</button>
+                        <button class="submit">Log in</button>            
+                    </footer>
+                </section>
+                <section style="display: block;">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <label for="check"><input type="checkbox" name="checkbox" id="check" value="1"> I agree to the <u>Terms</u>.</label>
+                    <footer>
+                        <button data-izimodal-close="" data-izimodal-transitionout="bounceOutDown">Cancel</button>
+                        <button class="submit">Create Account</button>
+                    </footer>
+                </section>
+        	</div>
+        </div>
+    </div>
+
+
+
+
+
+
+<div id="modal-search" class="iziModal_search">
+	<button data-izimodal-close="" class="icon-close" style="">X</button>
+
+	<div class="simple-search">
+	    <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作者
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />作品
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	        <select name="" id="">
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        </select>
+	        <select name="" id="">
+	        	<option value="">AND</option>
+	        	<option value="">OR</option>
+	        	<option value="">OR</option>
+	        </select>
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	        <select name="" id="">
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        </select>
+	        <select name="" id="">
+	        	<option value="">AND</option>
+	        	<option value="">OR</option>
+	        	<option value="">OR</option>
+	        </select>
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	        <select name="" id="">
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        </select>
+	        <select name="" id="">
+	        	<option value="">AND</option>
+	        	<option value="">OR</option>
+	        	<option value="">OR</option>
+	        </select>
+	    </div>
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值">
+	        <select name="" id="">
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        	<option value="">選擇欄位</option>
+	        </select>
+	        <select name="" id="">
+	        	<option value="">AND</option>
+	        	<option value="">OR</option>
+	        	<option value="">OR</option>
+	        </select>
+	    </div>
+	   
+	    <!-- <div class="seach_type">
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />精確
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />模糊
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	        <div class="seach_type_item">
+	            <label class="control control--checkbox">
+	                <input type="checkbox" checked="checked" />同義
+	                <div class="control__indicator"></div>
+	            </label>
+	        </div>
+	    </div> -->
+	    <a href="" class="submit">查詢</a>
+	</div>
+</div>
+
+
+
+		<!-- hamburg -->
+		
+		
+	</div>
+
+
+
+
+
+
+
+
+<div class="main_image_inside_wrapper">
+	<div class="main_image_inside">
+
+		<div class="main_slider_inside">
+
+			<div class="search_section_insidepage">
+				<div class="fun_sec">
+					<div class="icon"><i class="fas fa-search"></i></div>
+					<input type="text" placeholder="館藏查詢">
+					<div class="fun_sec_i trigger-custom" data-iziModal-open="#modal-search">
+						<i class="fas fa-sliders-h"></i>
+						</div>
+				</div>
+				<div class="btn">搜尋</div>
+			</div>
+			<!-- <section class="main slider">
+			    <div class="new_photo"><img src="img/inside_main_image.jpg"> </div>
+			</section> -->
+		</div>
+
+		<div class="circle_link">
+			<!-- <div class="circle_link_btn">
+				<i class="fa fa-university" aria-hidden="true"></i>
+				<p>館藏查詢 </p>
+			</div> -->		
+			<a href="" class="circle_link_btn">
+				<i class="far fa-calendar-alt fa-lg"></i>
+				<p>時間軸 </p>
+			</a>
+			<a href="" class="circle_link_btn">
+				<i class="fas fa-map-marker-alt fa-lg"></i>
+				<p>空間分布 </p>
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+<div class="bread_crumbs">
+	<div class="bread_crumbs_div"><a href="">首頁 </a> > <a href=""> 關於本站 </a> > <p>主題特展</p></div>
+</div>
+
+<div class="t-title">
+	<h2><i class="fa fa-cube" aria-hidden="true"></i> 主題特展</h2>
+</div>
+
+
+
+	
+	<div class="column_layout">
+		<div class="i_aside">
+			<div class="top-line"></div>
+			<div class="theme_intro">
+				<h4>敖幼祥</h4>
+
+				<h6>臺灣高雄人</h6>
+				<h6>出生日期：1988/3/19</h6>
+
+				<div class="resume">
+				<h5>作品</h5>	
+				<ul>
+					<li>烏龍院第一集，1988</li>
+					<li>烏龍院第二集，1988</li>
+					<li>烏龍院二動畫版烏龍院二動畫版烏龍院二動畫版，1988</li>
+					<li>烏龍院第一集，1988</li>
+					<li>烏龍院第一集，1988</li>
+				</ul>
+				</div>		
+
+				<br>
+				<p>《YOUNG GUNS》是台灣漫畫家林政德的代表作品，內容主要為青春校園生活與棒球社團故事，最初開始於1990年10月在《星期漫畫》雜誌上連載，後以漫畫單行本出版發行，前後歷時 20 年共發行 12 本，創下台灣漫畫最高數百萬冊銷售量，曾被改編為電視動畫以及製作成DOS用電腦遊戲《YOUNG GUNS大富翁》。</p>
+				<p>高一學生袁建平某天在校車上見到了美麗的學姐蘇慧文，令他一見鍾情，決定每天都搭校車通學。此外又在一次欺負事件中認識了蘇慧文的國中同學楊日輝，而害羞的楊日輝也無法忘懷這位美麗溫柔的國中同學，再加上留級生阿諾及班花陳玳雅。</p>
+				<p>豔福不淺的袁建平在一次因緣際會下與有名的──紀幼蘭相約看球賽，然而這次愉快的約會卻給他惹來了大麻煩。綽號「瀟灑」的三年級學長對她相當傾心，和瀟灑手下有過節的楊日輝以及與二年級學長不合的張士朋。但是這群二年級的黑道份子卻被袁建平耍得團團轉，學長勇伯更是被張士朋修理得慘兮兮，楊日輝則因故掛彩。</p>
+
+
+			</div>
+
+		</div>
+		<div class="i_content">
+			<div class="theme_works">
+				<div class="works_col">
+					<div class="works_img" data-iziModal-open="#modal-a"><img src="img/link_01.jpg" alt=""></a></div>
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+				</div>
+				<div class="works_col">
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+				</div>
+				<div class="works_col">
+					<div class="works_img"><img src="img/l2.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/link_01.jpg" alt=""></div>
+					<div class="works_img"><img src="img/book_01.jpg" alt=""></div>
+				</div>
+				
+
+
+
+			</div>
+		</div>
+
+
+
+
+	</div>
+
+
+
+
+
+<div id="modal-a" class="iziModal"  >
+ <button data-iziModal-close class="icon-close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+		<div class="lightbox_a">
+			<div class="top-line"></div>
+			<div class="detail_item">
+				<div class="detail_img">
+					<img src="img/book_01.jpg" alt="">
+				</div>
+
+				<div class="detail_des">
+				<h6>詞彙萃取</h6>
+				<p>本技術以機器學習為基底，大量學習文章用語樣式（pattern），自動化萃取文本中的人物、時間、團體、品牌、關鍵字詞彙，使分析結果具準確優勢。
+				無論何種時間標記方式，皆可進行正規化轉換，利於大量資料整合； 地點串接經緯度資料， 方便應用於地圖標記。
+				</p>
+				</div>
+			</div>
+			<div class="top-line"></div>
+		</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer_wrapper">
+	<footer>
+		
+		<div class="links_right">
+
+			<div class="footer_link">
+				<a href="">資訊安全政策</a>
+				<a href="">隱私權保護政策</a>
+				<a href="">政府網站資料開放</a>
+			</div>
+
+			<div class="copyright">
+				<p>文化部著作權聲明 Copyright © All rights reserved.</p>
+				<p>電話：(+886)-02-8512-6000</p>
+				<p>地址：24219新北市新莊區中平路439號南棟13樓</p>
+				<p>建議瀏覽器：Chrome、Firefox、Safari、IE10以上版本 (螢幕最佳顯示效果為1280*960 )</p>
+
+				<div class="gov">
+					<img src="img/gov.png" alt="">
+					<img src="img/gov2.png" alt="">
+				</div>
+			</div>
+			<div class="culture_dep">
+			
+				<a href="#"><img src="img/culture_gov_logo.png" alt=""></a>
+			</div>
+
+
+		</div>
+	</footer>
+</div>
+
+</body>
+</html>

@@ -846,7 +846,7 @@ $susy: (debug: (image: hide))
 				margin-right: 20px
 				font-size: 16px
 				color: #888
-				display: flex
+				display: 、
 				justify-content: flex-start
 				align-items: center
 				input[type=checkbox]
@@ -1031,81 +1031,120 @@ $susy: (debug: (image: hide))
 
 
 .search_by_map
-	+susy-breakpoint($breakpoint_mobile, $mobile)
+	+susy-breakpoint($breakpoint_mobile, $w_mobile)
 		+container
 
 
-	+susy-breakpoint($breakpoint_pad, $pad)
+	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
 
 
-	+susy-breakpoint($breakpoint_desktop, $desktop)
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
 		margin-bottom: 60px
-		.map_block
-			+span(12)
-			height: 500px
+		.map_block_lg
+			width: 100%
+			height: 100vh
 			background: #eee
-			margin-bottom: 40px
+			// margin-bottom: 40px
+			position: relative
 			iframe
 				width: 100%
 				height: 100%
+			.map_list_lg
+				width: 30%
+				height: 90%	
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 10px 10px
+				overflow: auto
+				
+				.map_item_detail_lg
+					display: flex
+					flex-direction: row
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 30px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_lg
+						margin-right: 15px
+						width: 23%
+					.des_lg
+						width: 65%
+						h6 
+							font-size: 18px
+							margin-bottom: 10px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 14px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 4
+							-webkit-box-orient: vertical
 
-		.map_item
-			.map_item_detail
-				+span(6)
-				display: flex
-				flex-direction: row
-				align-items: flex-start
-				justify-content: flex-start
-				margin-bottom: 30px
-				.photo
-					margin-right: 15px
-					width: 28%
-
-				.des
-					width: 65%
-					h6 
-						font-size: 18px
-						margin-bottom: 10px
-						color: #F5A623
-						font-weight: 900
-						line-height: 1.2
-						text-overflow: ellipsis
-						white-space: nowrap
-						overflow: hidden
-					p 
-						font-size: 14px
-						// height: 80px
-						line-height: 1.4
-						overflow: hidden
-						text-overflow: ellipsis
-						display: -webkit-box
-						-webkit-line-clamp: 4
-						-webkit-box-orient: vertical
-				.photo_lg
-					margin-right: 15px
-					width: 23%
-				.des_lg
-					width: 65%
-					h6 
-						font-size: 18px
-						margin-bottom: 10px
-						color: #F5A623
-						font-weight: 900
-						line-height: 1.2
-						text-overflow: ellipsis
-						white-space: nowrap
-						overflow: hidden
-					p 
-						font-size: 14px
-						// height: 80px
-						line-height: 1.5
-						overflow: hidden
-						text-overflow: ellipsis
-						display: -webkit-box
-						-webkit-line-clamp: 5
-						-webkit-box-orient: vertical
+		.map_block_sm
+			width: 100%
+			height: 900px
+			background: #eee
+			// margin-bottom: 40px
+			position: relative
+			iframe
+				width: 100%
+				height: 100%
+			.map_list_sm
+				width: 30%
+				height: 80%
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 5px 3px
+				overflow: auto
+				
+				.map_item_detail_sm
+					display: flex
+					flex-direction: row
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 10px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_sm
+						margin-right: 10px
+						width: 23%
+					.des_sm
+						width: 65%
+						h6 
+							font-size: 16px
+							margin-bottom: 5px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 13px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 2
+							-webkit-box-orient: vertical					
 
 
 

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *, *:before, *:after {
   box-sizing: border-box; }
 
@@ -541,8 +542,6 @@ a {
     width: 500px;
     border: none;
     outline: none; }
-  .search_section_insidepage .fun_sec input::-webkit-input-placeholder {
-    color: #c0c0c0; }
   .search_section_insidepage .fun_sec input:-ms-input-placeholder {
     color: #c0c0c0; }
   .search_section_insidepage .fun_sec input::placeholder {
@@ -717,8 +716,6 @@ a {
     width: 500px;
     border: none;
     outline: none; }
-  .search_section .fun_sec input::-webkit-input-placeholder {
-    color: #c0c0c0; }
   .search_section .fun_sec input:-ms-input-placeholder {
     color: #c0c0c0; }
   .search_section .fun_sec input::placeholder {
@@ -2670,9 +2667,6 @@ a {
     width: 70%;
     padding: 0px 10px;
     height: 35px; }
-  .simple-search .search_area input[type=text]::-webkit-input-placeholder {
-    color: #c0c0c0;
-    font-size: 14px; }
   .simple-search .search_area input[type=text]:-ms-input-placeholder {
     color: #c0c0c0;
     font-size: 14px; }
@@ -2720,8 +2714,7 @@ a {
     margin-right: 20px;
     font-size: 16px;
     color: #888;
-    display: -ms-flexbox;
-    display: flex;
+    display: 、;
     -ms-flex-pack: start;
     justify-content: flex-start;
     -ms-flex-align: center;
@@ -2931,7 +2924,7 @@ a {
 
 @media (min-width: 0px) {
   .search_by_map {
-    max-width: 600px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto; }
   .search_by_map:after {
@@ -2941,7 +2934,7 @@ a {
 
 @media (min-width: 767px) {
   .search_by_map {
-    max-width: 880px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto; }
   .search_by_map:after {
@@ -2951,7 +2944,7 @@ a {
 
 @media (min-width: 1000px) {
   .search_by_map {
-    max-width: 1200px;
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px; }
@@ -2959,22 +2952,25 @@ a {
     content: " ";
     display: block;
     clear: both; }
-  .search_by_map .map_block {
-    width: 96.66667%;
-    float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
-    height: 500px;
+  .search_by_map .map_block_lg {
+    width: 100%;
+    height: 100vh;
     background: #eee;
-    margin-bottom: 40px; }
-  .search_by_map .map_block iframe {
+    position: relative; }
+  .search_by_map .map_block_lg iframe {
     width: 100%;
     height: 100%; }
-  .search_by_map .map_item .map_item_detail {
-    width: 46.66667%;
-    float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
+  .search_by_map .map_block_lg .map_list_lg {
+    width: 30%;
+    height: 90%;
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    left: 10px;
+    top: 50px;
+    padding: 10px 10px;
+    overflow: auto; }
+  .search_by_map .map_block_lg .map_list_lg .map_item_detail_lg {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: row;
@@ -2983,34 +2979,15 @@ a {
     align-items: flex-start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    margin-bottom: 30px; }
-  .search_by_map .map_item .map_item_detail .photo {
-    margin-right: 15px;
-    width: 28%; }
-  .search_by_map .map_item .map_item_detail .des {
-    width: 65%; }
-  .search_by_map .map_item .map_item_detail .des h6 {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: #F5A623;
-    font-weight: 900;
-    line-height: 1.2;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    overflow: hidden; }
-  .search_by_map .map_item .map_item_detail .des p {
-    font-size: 14px;
-    line-height: 1.4;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 4; }
-  .search_by_map .map_item .map_item_detail .photo_lg {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eee;
+    padding: 10px; }
+  .search_by_map .map_block_lg .map_list_lg .map_item_detail_lg .photo_lg {
     margin-right: 15px;
     width: 23%; }
-  .search_by_map .map_item .map_item_detail .des_lg {
+  .search_by_map .map_block_lg .map_list_lg .map_item_detail_lg .des_lg {
     width: 65%; }
-  .search_by_map .map_item .map_item_detail .des_lg h6 {
+  .search_by_map .map_block_lg .map_list_lg .map_item_detail_lg .des_lg h6 {
     font-size: 18px;
     margin-bottom: 10px;
     color: #F5A623;
@@ -3019,13 +2996,64 @@ a {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden; }
-  .search_by_map .map_item .map_item_detail .des_lg p {
+  .search_by_map .map_block_lg .map_list_lg .map_item_detail_lg .des_lg p {
     font-size: 14px;
     line-height: 1.5;
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 5; } }
+    -webkit-line-clamp: 4; }
+  .search_by_map .map_block_sm {
+    width: 100%;
+    height: 900px;
+    background: #eee;
+    position: relative; }
+  .search_by_map .map_block_sm iframe {
+    width: 100%;
+    height: 100%; }
+  .search_by_map .map_block_sm .map_list_sm {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    background: #FFF;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    left: 10px;
+    top: 50px;
+    padding: 5px 3px;
+    overflow: auto; }
+  .search_by_map .map_block_sm .map_list_sm .map_item_detail_sm {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding: 10px; }
+  .search_by_map .map_block_sm .map_list_sm .map_item_detail_sm .photo_sm {
+    margin-right: 10px;
+    width: 23%; }
+  .search_by_map .map_block_sm .map_list_sm .map_item_detail_sm .des_sm {
+    width: 65%; }
+  .search_by_map .map_block_sm .map_list_sm .map_item_detail_sm .des_sm h6 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #F5A623;
+    font-weight: 900;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; }
+  .search_by_map .map_block_sm .map_list_sm .map_item_detail_sm .des_sm p {
+    font-size: 13px;
+    line-height: 1.5;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; } }
 
 @media (min-width: 0px) {
   .search_by_timeline {

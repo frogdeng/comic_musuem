@@ -30,7 +30,7 @@ $susy: (debug: (image: hide))
 		flex-direction: column
 		justify-content: center
 		align-items: flex-start
-		padding-left: 20px
+		padding-left: 10px
 		font-size: 14px
 		margin-bottom: 10px
 		width: 100%
@@ -119,10 +119,128 @@ $susy: (debug: (image: hide))
 .about_site
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 20px
+		margin-bottom: 40px
+		.layout_aside
+			+span(6)
+			padding: 0 5px
+			margin-bottom: 30px
 
+			ul
+				li 
+					a 
+						display: block
+						border-bottom: 1px solid #eee
+						padding: 10px 0
+						font-size: 18px
+						font-weight: 900
+						transition: all .3s
+						i 
+							margin-right: 10px
+						&:hover
+							color: #222
+
+		.layout_content
+			+span(6)
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #a22a59
+			p 
+				font-size: 16px
+				margin-bottom: 10px
+				font-weight: 400
+			img 
+				margin-bottom: 20px
+
+		
+		.relative_link
+			+span(6)
+			.link_block
+				+span(3)
+				// padding: 10px
+				margin-bottom: 30px
+				position: relative
+				overflow: hidden
+				cursor: pointer
+				.mask
+					position: absolute
+					width: 100%
+					height: 20%
+					background: rgba(0,0,0, .8)
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					color: #FFF
+					bottom: 0
+					transition: all .3s
+
+				img
+					display: block
+					width: 100%
+				
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 20px	
+		margin-bottom: 40px
+		.layout_aside
+			+span(2)
+			padding: 0 10px
+			ul
+				li 
+					a 
+						display: block
+						border-bottom: 1px solid #eee
+						padding: 10px 0
+						font-size: 18px
+						font-weight: 900
+						transition: all .3s
+						i 
+							margin-right: 10px
+						&:hover
+							color: #222
+
+		.layout_content
+			+span(6)
+			h6 
+				font-size: 28px
+				margin-bottom: 20px
+				color: #a22a59
+			p 
+				font-size: 16px
+				margin-bottom: 10px
+				font-weight: 400
+			img 
+				margin-bottom: 20px
+
+		
+		.relative_link
+			+span(8)
+			.link_block
+				+span(4)
+				// padding: 10px
+				margin-bottom: 30px
+				position: relative
+				overflow: hidden
+				cursor: pointer
+				.mask
+					position: absolute
+					width: 100%
+					height: 20%
+					background: rgba(0,0,0, .8)
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					color: #FFF
+					bottom: 0
+					transition: all .3s
+
+				img
+					display: block
+					width: 100%
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -130,7 +248,7 @@ $susy: (debug: (image: hide))
 		margin-bottom: 60px
 		.layout_aside
 			+span(3)
-			padding: 0 20px
+			padding: 0 10px
 			ul
 				li 
 					a 
@@ -231,11 +349,254 @@ $susy: (debug: (image: hide))
 .post_classification_content
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		.filter_section
+			width: 100%
+			padding: 10px 0
+			margin-bottom: 10px
+			border-bottom: 5px solid #eee
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.switch_array
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				.switch_btn
+					display: block
+					margin-left: 20px
+					transition: all .1s
+					&:hover
+						transform: scale(1.2)
+					i 
+						font-size: 23px
 
+						
+			.filter
+				display: flex
+				flex-direction: column
+				justify-content: flex-start
+				align-items: flex-start
+				.filter_row
+					margin-right: 25px
+					font-size: 16px 
+					color: #888
+					margin-bottom: 10px
+					select 
+						margin-left: 5px
+						padding: 5px 25px
+						height: 35px
+						font-size: 14px
+						border: 1px solid #e6e6e6
+						color: #999
+						background-color: #fff
+						border-radius: 0
+						outline: none
+						// -webkit-appearance: none
+
+		.select_tag
+			margin-bottom: 20px
+			border-bottom: 1px solid #eee
+			padding-bottom: 0px
+			.tag_item
+				float: left	
+				margin-right: 20px
+				background: #F2F9F4
+				margin-bottom: 10px
+				padding: 8px 20px
+				color: #4A4A4A
+				font-size: 14px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				a
+					display: block
+					margin-left: 10px
+					font-size: 16px
+					transition: all .2s
+					&:hover
+						transform: scale(1.2)
+					i 
+						color: #7ED321
+						
+		.classification_item
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			border-bottom: 1px dashed #c0c0c0
+			padding: 20px 0
+			.photo
+				margin-right: 20px
+				width: 30%
+
+			.des
+				width: 60%
+				h6 
+					font-size: 20px
+					margin-bottom: 10px
+					color: #F5A623
+					font-weight: 900
+				p 
+					font-size: 14px
+				.des_info
+					margin-top: 10px
+
+		.classification_item_block
+			+span(3)
+				margin-bottom: 30px
+			.photo
+				margin-bottom: 10px
+			.des
+				h6 
+					font-size: 18px
+					margin-bottom: 10px
+					color: #F5A623
+					line-height: 1.2
+					font-weight: 900
+				.text_section
+					// background: #eee
+					margin-bottom: 10px
+					p
+						font-size: 14px
+						color: #888
+						overflow: hidden;
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 5
+						// -webkit-box-orient: vertical
+				.des_info
+					margin-top: 10px
+					font-size: 14px
+					p
+						color: #222
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		.filter_section
+			width: 100%
+			padding: 10px 0
+			margin-bottom: 10px
+			border-bottom: 5px solid #eee
+			display: flex
+			flex-direction: row
+			justify-content: space-between
+			align-items: center
+			.switch_array
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				.switch_btn
+					display: block
+					margin-left: 20px
+					transition: all .1s
+					&:hover
+						transform: scale(1.2)
+					i 
+						font-size: 23px
 
+						
+			.filter
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				.filter_row
+					margin-right: 25px
+					font-size: 16px 
+					color: #888
+					select 
+						margin-left: 5px
+						padding: 5px 25px
+						height: 35px
+						font-size: 14px
+						border: 1px solid #e6e6e6
+						color: #999
+						background-color: #fff
+						border-radius: 0
+						outline: none
+						// -webkit-appearance: none
+
+		.select_tag
+			margin-bottom: 20px
+			border-bottom: 1px solid #eee
+			padding-bottom: 10px
+			.tag_item
+				float: left	
+				margin-right: 20px
+				background: #F2F9F4
+				margin-bottom: 10px
+				padding: 8px 20px
+				color: #4A4A4A
+				font-size: 14px
+				display: flex
+				flex-direction: row
+				justify-content: center
+				align-items: center
+				a
+					display: block
+					margin-left: 10px
+					font-size: 16px
+					transition: all .2s
+					&:hover
+						transform: scale(1.2)
+					i 
+						color: #7ED321
+						
+		.classification_item
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			border-bottom: 1px dashed #c0c0c0
+			padding: 20px 0
+			.photo
+				margin-right: 20px
+				width: 20%
+
+			.des
+				width: 80%
+				h6 
+					font-size: 20px
+					margin-bottom: 10px
+					color: #F5A623
+					font-weight: 900
+				p 
+					font-size: 14px
+				.des_info
+					margin-top: 10px
+
+		.classification_item_block
+			+span(4)
+				margin-bottom: 30px
+			.photo
+				margin-bottom: 10px
+			.des
+				h6 
+					font-size: 18px
+					margin-bottom: 10px
+					color: #F5A623
+					line-height: 1.2
+					font-weight: 900
+				.text_section
+					// background: #eee
+					margin-bottom: 10px
+					p
+						font-size: 14px
+						color: #888
+						overflow: hidden;
+						text-overflow: ellipsis
+						display: -webkit-box
+						-webkit-line-clamp: 5
+						// -webkit-box-orient: vertical
+				.des_info
+					margin-top: 10px
+					font-size: 14px
+					p
+						color: #222	
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -292,6 +653,7 @@ $susy: (debug: (image: hide))
 				float: left	
 				margin-right: 20px
 				background: #F2F9F4
+				margin-bottom: 10px
 				padding: 8px 20px
 				color: #4A4A4A
 				font-size: 14px
@@ -371,16 +733,128 @@ $susy: (debug: (image: hide))
 
 .top-line
 	height: 10px
+	// margin-bottom: 20px
 	background: linear-gradient(to right, rgba(194,229,156,1) 0%,rgba(100,179,244,1) 100%)
 
 .post_classification_menu
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 20px
+		background: linear-gradient(to bottom, rgba(174,218,182,.2) 0%,rgba(240,249,255,.2) 100%)
+		.classification_block
+			.classification_select
+				margin-bottom: 10px
+				select
+					width: 100%
+					height: 35px
+					padding: 5px 25px
+					font-size: 14px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					// -webkit-appearance: none
 
+			.title_bar
+				background: url(../img/bar_01.png)
+				background-size: cover
+				height: 45px
+				color: #FFF
+				padding: 0 20px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				h6
+					color: #FFF
+					font-weight: 900
+				i 
+					font-size: 18px
+			.classification_list
+				background: rgba(255,255,255, .7)
+				padding: 10px 20px 30px 20px
+				.classification_row
+					padding: 10px 0
+					color: #777
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: center
+					border-bottom: 1px solid #eee
+					input[type="radio"]
+						margin-right: 10px
+				.show_more
+					display: block
+					height: 28px
+					color: #FFF
+					background: #96CDBD
+					border-radius: 3px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					font-size: 14px
+					margin-top: 20px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 20px
+		background: linear-gradient(to bottom, rgba(174,218,182,.2) 0%,rgba(240,249,255,.2) 100%)
+		.classification_block
+			.classification_select
+				margin-bottom: 10px
+				select
+					width: 100%
+					height: 35px
+					padding: 5px 25px
+					font-size: 14px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					// -webkit-appearance: none
 
+			.title_bar
+				background: url(../img/bar_01.png)
+				height: 45px
+				color: #FFF
+				padding: 0 20px
+				display: flex
+				flex-direction: row
+				justify-content: space-between
+				align-items: center
+				h6
+					color: #FFF
+					font-weight: 900
+				i 
+					font-size: 18px
+			.classification_list
+				background: rgba(255,255,255, .7)
+				padding: 10px 20px 30px 20px
+				.classification_row
+					padding: 10px 0
+					color: #777
+					display: flex
+					flex-direction: row
+					justify-content: flex-start
+					align-items: center
+					border-bottom: 1px solid #eee
+					input[type="radio"]
+						margin-right: 10px
+				.show_more
+					display: block
+					height: 28px
+					color: #FFF
+					background: #96CDBD
+					border-radius: 3px
+					display: flex
+					flex-direction: row
+					justify-content: center
+					align-items: center
+					font-size: 14px
+					margin-top: 20px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
@@ -534,10 +1008,56 @@ $susy: (debug: (image: hide))
 .comic_detail
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		margin-bottom: 40px
+		h4 
+			font-size: 30px
+			color: #F5A623
+			margin-bottom: 20px
+		.comic_detail_row
+			padding: 10px 0
+			border-bottom: 1px solid #eee
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			.t_title
+				width: 20%
+				color: #777
+				font-size: 16px
+			.t_des
+				width: 80%
+				color: #777
+				font-size: 16px
+				p 
+					margin-bottom: 10px
+					font-size: 16px
 
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		margin-bottom: 40px
+		h4 
+			font-size: 30px
+			color: #F5A623
+			margin-bottom: 20px
+		.comic_detail_row
+			padding: 10px 0
+			border-bottom: 1px solid #eee
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: flex-start
+			.t_title
+				width: 20%
+				color: #777
+				font-size: 16px
+			.t_des
+				width: 80%
+				color: #777
+				font-size: 16px
+				p 
+					margin-bottom: 10px
+					font-size: 16px
 
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
@@ -573,15 +1093,18 @@ $susy: (debug: (image: hide))
 .comic_cover
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
-
+		padding: 0 30px
+		margin-bottom: 40px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
-
+		padding: 0 30px
+		margin-bottom: 40px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 0 30px
+		margin-bottom: 40px
 
 
 
@@ -1100,7 +1623,23 @@ $susy: (debug: (image: hide))
 .chronology_wrapper
 	padding: 30px 0
 	position: relative
-	.dot_line
+.dot_line
+	+susy-breakpoint($breakpoint_mobile, $w_mobile)
+		+container
+		position: absolute
+		width: 100%
+		height: 13px
+		background: url('../img/dot_line.png')
+		top: 163px	
+	+susy-breakpoint($breakpoint_pad, $w_pad)
+		+container
+		position: absolute
+		width: 100%
+		height: 13px
+		background: url('../img/dot_line.png')
+		top: 117px
+	+susy-breakpoint($breakpoint_desktop, $w_desktop)
+		+container
 		position: absolute
 		width: 100%
 		height: 13px
@@ -1111,10 +1650,172 @@ $susy: (debug: (image: hide))
 .chronology
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 40px
+		.chronology_top
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: space-between
+			margin-bottom: 20px
+			h6
+				font-size: 22px
+				line-height: 1.4
+				color: #888
+				text-align: left
+				margin-bottom: 10px
+			.filter_year
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				select
+					height: 33px
+					margin: 0 10px
+					padding: 5px 15px
+					font-size: 15px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					// appearance: none
 
+
+		.chronology_section
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: flex-start
+			position: relative
+			.left_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				left: -30px
+				display: none
+				
+
+			.right_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				right: -30px
+				display: none
+
+
+			.chronology_column
+				width: 100%
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				margin-bottom: 30px
+				.top_color
+					width: 100%
+					height: 13px
+				.chronology_date
+					width: 100%
+					height: 70px
+					padding: 10px 20px
+					margin-bottom: 8px
+					h4 
+						font-size: 25px
+						line-height: 1.2
+					h5 
+						font-size: 14px	
+				.chronology_content
+					width: 100%
+					padding-right: 20px
+					img
+						display: block
+						height: 140px
+						margin-bottom: 10px
+						object-fit: cover
+					p 
+						font-size: 13px
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 40px
+		.chronology_top
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			justify-content: space-between
+			margin-bottom: 7px
+			h6
+				font-size: 22px
+				line-height: 1.4
+				color: #888
+				text-align: left
+			.filter_year
+				display: flex
+				flex-direction: row
+				align-items: center
+				justify-content: center
+				select
+					height: 33px
+					margin: 0 10px
+					padding: 5px 25px
+					font-size: 15px
+					border: 1px solid #e6e6e6
+					color: #999
+					background-color: #fff
+					border-radius: 0
+					outline: none
+					// appearance: none
+		.chronology_section
+			display: flex
+			flex-direction: row
+			align-items: flex-start
+			justify-content: flex-start
+			position: relative
+			.left_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				left: -30px
+				display: block
+				
+			.right_arrow
+				position: absolute
+				color: #FF6666
+				width: 20px
+				top: 50%
+				right: -30px
+				display: block
 
+			.chronology_column
+				width: 25%
+				display: flex
+				flex-direction: column
+				align-items: flex-start
+				justify-content: flex-start
+				.top_color
+					width: 100%
+					height: 13px
+				.chronology_date
+					width: 100%
+					height: 70px
+					padding: 10px 20px
+					margin-bottom: 8px
+					h4 
+						font-size: 25px
+						line-height: 1.2
+					h5 
+						font-size: 14px	
+				.chronology_content
+					width: 100%
+					padding-right: 20px
+					img
+						display: block
+						height: 140px
+						margin-bottom: 10px
+						object-fit: cover
+					p 
+						font-size: 13px
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		padding: 40px
@@ -1123,7 +1824,7 @@ $susy: (debug: (image: hide))
 			flex-direction: row
 			align-items: flex-start
 			justify-content: space-between
-			margin-bottom: 14px
+			margin-bottom: 7px
 			h6
 				font-size: 22px
 				line-height: 1.4
@@ -1159,14 +1860,14 @@ $susy: (debug: (image: hide))
 				color: #FF6666
 				width: 20px
 				top: 50%
-				left: -50px
+				left: -30px
 
 			.right_arrow
 				position: absolute
 				color: #FF6666
 				width: 20px
 				top: 50%
-				right: -50px
+				right: -30px
 
 			.chronology_column
 				width: 25%
@@ -1190,8 +1891,11 @@ $susy: (debug: (image: hide))
 				.chronology_content
 					width: 100%
 					padding-right: 40px
-					img 
+					img
+						display: block
 						height: 140px
+						margin-bottom: 10px
+						object-fit: cover
 					p 
 						font-size: 13px
 
@@ -1262,11 +1966,216 @@ $susy: (debug: (image: hide))
 .search_by_map
 	+susy-breakpoint($breakpoint_mobile, $w_mobile)
 		+container
+		margin-bottom: 30px
+		.map_block_lg
+			width: 100%
+			height: 100vh
+			background: #eee
+			// margin-bottom: 40px
+			position: relative
+			iframe
+				width: 100%
+				height: 100%
+			.map_list_lg
+				width: 30%
+				height: 90%	
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 10px 10px
+				overflow: auto
+				
+				.map_item_detail_lg
+					display: flex
+					flex-direction: column
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 10px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_lg
+						margin-right: 15px
+						width: 100%
+					.des_lg
+						width: 100%
+						h6 
+							font-size: 14px
+							margin-bottom: 5px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 12px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 2
+							-webkit-box-orient: vertical
 
+		.map_block_sm
+			width: 100%
+			height: 900px
+			background: #eee
+			// margin-bottom: 40px
+			position: relative
+			iframe
+				width: 100%
+				height: 100%
+			.map_list_sm
+				width: 30%
+				height: 80%
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 5px 3px
+				overflow: auto
+				
+				.map_item_detail_sm
+					display: flex
+					flex-direction: column
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 0px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_sm
+						margin-right: 10px
+						width: 80%
+					.des_sm
+						width: 100%
+						h6 
+							font-size: 14px
+							margin-bottom: 5px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 12px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 2
+							-webkit-box-orient: vertical		
 
 	+susy-breakpoint($breakpoint_pad, $w_pad)
 		+container
+		.map_block_lg
+			width: 100%
+			height: 100vh
+			background: #eee
+			// margin-bottom: 40px
+			position: relative
+			iframe
+				width: 100%
+				height: 100%
+			.map_list_lg
+				width: 30%
+				height: 90%	
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 10px 10px
+				overflow: auto
+				
+				.map_item_detail_lg
+					display: flex
+					flex-direction: row
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 30px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_lg
+						margin-right: 15px
+						width: 23%
+					.des_lg
+						width: 65%
+						h6 
+							font-size: 18px
+							margin-bottom: 10px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 14px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 4
+							-webkit-box-orient: vertical
 
+		.map_block_sm
+			width: 100%
+			height: 900px
+			background: #eee
+			// margin-bottom: 40px
+			position: relative
+			iframe
+				width: 100%
+				height: 100%
+			.map_list_sm
+				width: 30%
+				height: 80%
+				position: absolute
+				background: #FFF
+				box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
+				left: 10px
+				top: 50px
+				padding: 5px 3px
+				overflow: auto
+				
+				.map_item_detail_sm
+					display: flex
+					flex-direction: row
+					align-items: flex-start
+					justify-content: flex-start
+					margin-bottom: 0px
+					border-bottom: 1px solid #eee
+					padding: 10px
+					.photo_sm
+						margin-right: 10px
+						width: 23%
+					.des_sm
+						width: 65%
+						h6 
+							font-size: 16px
+							margin-bottom: 5px
+							color: #F5A623
+							font-weight: 900
+							line-height: 1.2
+							text-overflow: ellipsis
+							white-space: nowrap
+							overflow: hidden
+						p 
+							font-size: 13px
+							// height: 80px
+							line-height: 1.5
+							overflow: hidden
+							text-overflow: ellipsis
+							display: -webkit-box
+							-webkit-line-clamp: 2
+							-webkit-box-orient: vertical		
 
 	+susy-breakpoint($breakpoint_desktop, $w_desktop)
 		+container
@@ -1348,7 +2257,7 @@ $susy: (debug: (image: hide))
 					flex-direction: row
 					align-items: flex-start
 					justify-content: flex-start
-					margin-bottom: 10px
+					margin-bottom: 0px
 					border-bottom: 1px solid #eee
 					padding: 10px
 					.photo_sm
@@ -1701,6 +2610,7 @@ $susy: (debug: (image: hide))
 .pure_text
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 10px
 		.pure_text_menu
 			margin-bottom: 40px
 			+span(6)
@@ -1829,11 +2739,89 @@ $susy: (debug: (image: hide))
 .bulletin
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
+		padding: 0 10px	
+		margin-bottom: 120px
 
+		h2 
+			font-size: 23px
+			margin-bottom: 10px
+			color: #4A90E2
+		p 
+			font-size: 15px
+			color: #888
+			line-height: 1.5
+			margin-bottom: 10px
+		.new_news
+			+span(6)
+			border: 1px solid #eee
+			padding: 30px
+			margin-bottom: 40px
+			h6 
+				font-size: 18px
+				color: #222
+				margin-bottom: 10px
+				padding-bottom: 5px
+				border-bottom: 2px solid #888
+			.news_item
+				display: block
+				font-size: 14px
+				margin-bottom: 10px
+				padding: 5px 0
+				border-bottom: 1px solid #eee
+				transition: all .3s
+				&:hover
+					color: #222
+
+		.bulletin_detail
+			+span(6)
+			.l-l
+				width: 100%
+				height: 3px
+				background: #bad0ea
+				margin-bottom: 20px
 
 	+susy-breakpoint($breakpoint_pad, $pad)
 		+container
+		padding: 0 10px	
+		margin-bottom: 120px
 
+		h2 
+			font-size: 23px
+			margin-bottom: 10px
+			color: #4A90E2
+		p 
+			font-size: 15px
+			color: #888
+			line-height: 1.5
+			margin-bottom: 10px
+		.new_news
+			+span(8)
+			border: 1px solid #eee
+			padding: 30px
+			margin-bottom: 40px
+			h6 
+				font-size: 18px
+				color: #222
+				margin-bottom: 10px
+				padding-bottom: 5px
+				border-bottom: 2px solid #888
+			.news_item
+				display: block
+				font-size: 14px
+				margin-bottom: 10px
+				padding: 5px 0
+				border-bottom: 1px solid #eee
+				transition: all .3s
+				&:hover
+					color: #222
+
+		.bulletin_detail
+			+span(8)
+			.l-l
+				width: 100%
+				height: 3px
+				background: #bad0ea
+				margin-bottom: 20px
 
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container

@@ -125,23 +125,60 @@ $susy: (debug: (image: hide))
 			+span(6)
 			padding: 0 5px
 			margin-bottom: 30px
-
 			ul
 				li 
 					a 
 						display: block
-						border-bottom: 1px solid #eee
+						border-bottom: 2px solid #eee
 						padding: 10px 0
 						font-size: 18px
 						font-weight: 900
 						transition: all .3s
+						color: #ff7b7b
 						i 
 							margin-right: 10px
 						&:hover
 							color: #222
+					.subaside_menu
+						margin-left: 25px
+						margin-bottom: 20px
+						ul 
+							li
+								a
+									color: #888
+									font-size: 16px
+									font-weight: 400
+									padding: 8px 0
+									border-bottom: 1px solid #eee
+									&:hover
+										color: #222
+
 
 		.layout_content
 			+span(6)
+			.tab_menu
+				margin-bottom: 0px
+				padding: 20px 0
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: flex-start
+				align-items: flex-start
+				.tab_item
+					display: block
+					font-size: 16px
+					margin-bottom: 20px
+					// background: #c0c0c0
+					// border: 1px solid #c0c0c0
+					border-radius: 3px
+					&:hover
+						color: #222
+				.l-l
+					width: 2px
+					height: 16px
+					background: #eee
+					margin: 4px 20px
+
 			h6 
 				font-size: 28px
 				margin-bottom: 20px
@@ -192,18 +229,57 @@ $susy: (debug: (image: hide))
 				li 
 					a 
 						display: block
-						border-bottom: 1px solid #eee
+						border-bottom: 2px solid #eee
 						padding: 10px 0
 						font-size: 18px
 						font-weight: 900
 						transition: all .3s
+						color: #ff7b7b
 						i 
 							margin-right: 10px
 						&:hover
 							color: #222
+					.subaside_menu
+						margin-left: 25px
+						margin-bottom: 20px
+						ul 
+							li
+								a
+									color: #888
+									font-size: 16px
+									font-weight: 400
+									padding: 8px 0
+									border-bottom: 1px solid #eee
+									&:hover
+										color: #222
+
 
 		.layout_content
 			+span(6)
+			.tab_menu
+				margin-bottom: 0px
+				padding: 20px 0
+				display: flex
+				flex-direction: row
+				flex-wrap: wrap
+				justify-content: flex-start
+				align-items: flex-start
+				.tab_item
+					display: block
+					font-size: 16px
+					margin-bottom: 20px
+					// background: #c0c0c0
+					// border: 1px solid #c0c0c0
+					border-radius: 3px
+					&:hover
+						color: #222
+				.l-l
+					width: 2px
+					height: 16px
+					background: #eee
+					margin: 4px 20px
+
+
 			h6 
 				font-size: 28px
 				margin-bottom: 20px
@@ -253,18 +329,54 @@ $susy: (debug: (image: hide))
 				li 
 					a 
 						display: block
-						border-bottom: 1px solid #eee
+						border-bottom: 2px solid #eee
 						padding: 10px 0
 						font-size: 18px
 						font-weight: 900
 						transition: all .3s
+						color: #ff7b7b
 						i 
 							margin-right: 10px
 						&:hover
 							color: #222
+					.subaside_menu
+						margin-left: 25px
+						margin-bottom: 20px
+						ul 
+							li
+								a
+									color: #888
+									font-size: 16px
+									font-weight: 400
+									padding: 8px 0
+									border-bottom: 1px solid #eee
+									&:hover
+										color: #222
 
 		.layout_content
 			+span(9)
+			.tab_menu
+				margin-bottom: 10px
+				padding: 20px 0
+				display: flex
+				flex-direction: row
+				justify-content: flex-start
+				align-items: center
+				.tab_item
+					display: block
+					font-size: 16px
+					// background: #c0c0c0
+					// border: 1px solid #c0c0c0
+					border-radius: 3px
+					margin-bottom: 0
+					&:hover
+						color: #222
+				.l-l
+					width: 2px
+					height: 16px
+					background: #eee
+					margin: 0 20px
+
 			h6 
 				font-size: 28px
 				margin-bottom: 20px
@@ -306,6 +418,10 @@ $susy: (debug: (image: hide))
 					.mask
 						height: 100%
 						background: rgba(0,0,0, .8)
+
+
+
+
 
 
 
@@ -928,7 +1044,7 @@ $susy: (debug: (image: hide))
 		+container
 		width: 100%
 		margin-top: 10px
-		margin-bottom: 40px
+		margin-bottom: 20px
 		display: flex
 		justify-content: center
 		align-items: center
@@ -953,7 +1069,7 @@ $susy: (debug: (image: hide))
 		+container
 		width: 100%
 		margin-top: 10px
-		margin-bottom: 40px
+		margin-bottom: 30px
 		display: flex
 		justify-content: center
 		align-items: center
@@ -979,7 +1095,7 @@ $susy: (debug: (image: hide))
 	+susy-breakpoint($breakpoint_desktop, $desktop)
 		+container
 		width: 100%
-		margin-bottom: 60px
+		margin-bottom: 30px
 		margin-top: 40px
 		display: flex
 		justify-content: center
@@ -2321,8 +2437,8 @@ $susy: (debug: (image: hide))
 					width: 25%
 					// background: #eee
 					h5 
-						font-size: 50px
-						color: #222
+						font-size: 35px
+						color: c0c0c0
 						text-align: right
 						line-height: 1.2	
 					h6 
@@ -2424,8 +2540,8 @@ $susy: (debug: (image: hide))
 					width: 25%
 					// background: #eee
 					h5 
-						font-size: 50px
-						color: #222
+						font-size: 35px
+						color: c0c0c0
 						text-align: right
 						line-height: 1.2	
 					h6 
@@ -2529,8 +2645,8 @@ $susy: (debug: (image: hide))
 					width: 25%
 					// background: #eee
 					h5 
-						font-size: 50px
-						color: #222
+						font-size: 35px
+						color: c0c0c0
 						text-align: right
 						line-height: 1.2	
 					h6 

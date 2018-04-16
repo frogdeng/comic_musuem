@@ -1638,7 +1638,7 @@ $susy: (debug: (image: hide))
 
 
 .iziModal
-	background: rgba(0,0,0,0) !important
+// 	background: rgba(0,0,0,0) !important
 
 
 
@@ -1647,15 +1647,6 @@ $susy: (debug: (image: hide))
 .simple-search
 	+susy-breakpoint($breakpoint_mobile, $mobile)
 		+container
-
-	+susy-breakpoint($breakpoint_pad, $pad)
-		+container
-
-	+susy-breakpoint($breakpoint_desktop, $desktop)
-		+container
-		padding: 40px	
-		background: #FFF
-		
 		.search_area
 			display: flex
 			flex-direction: row
@@ -1669,13 +1660,14 @@ $susy: (debug: (image: hide))
 			input[type=text]
 				width: 70%
 				padding: 0px 10px
-				height: 35px
+				height: 40px
+				margin-right: 8px
 				&::placeholder
 					color: #c0c0c0
 					font-size: 14px
 			select
 				width: 10%
-				height: 35px
+				height: 40px
 				padding: 5px 25px
 				font-size: 14px
 				border: 1px solid #e6e6e6
@@ -1685,9 +1677,6 @@ $susy: (debug: (image: hide))
 				outline: none
 				margin-left: 1%
 				// appearance: none
-
-
-
 
 		.select_area
 			display: flex
@@ -1714,7 +1703,156 @@ $susy: (debug: (image: hide))
 				margin-right: 20px
 				font-size: 16px
 				color: #888
-				display: 、
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				input[type=checkbox]
+					margin-right: 8px
+		.submit
+			width: 200px
+			height: 40px
+			background: #4A90E2
+			display: flex
+			justify-content: center	
+			align-items: center	
+			color: #FFF
+			border-radius: 3px
+
+	+susy-breakpoint($breakpoint_pad, $pad)
+		+container
+		.search_area
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			input[type=text]
+				width: 70%
+				padding: 0px 10px
+				height: 40px
+				margin-right: 8px
+				&::placeholder
+					color: #c0c0c0
+					font-size: 14px
+			select
+				width: 10%
+				height: 40px
+				padding: 5px 25px
+				font-size: 14px
+				border: 1px solid #e6e6e6
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				margin-left: 1%
+				// appearance: none
+
+		.select_area
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 30px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			select
+				width: 150px
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.seach_type
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			.seach_type_item
+				margin-right: 20px
+				font-size: 16px
+				color: #888
+				display: flex
+				justify-content: flex-start
+				align-items: center
+				input[type=checkbox]
+					margin-right: 8px
+		.submit
+			width: 200px
+			height: 40px
+			background: #4A90E2
+			display: flex
+			justify-content: center	
+			align-items: center	
+			color: #FFF
+			border-radius: 3px
+
+	+susy-breakpoint($breakpoint_desktop, $desktop)
+		+container
+		padding: 40px	
+		background: #FFF
+		
+		.search_area
+			display: flex
+			flex-direction: row
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			input[type=text]
+				width: 70%
+				padding: 0px 10px
+				height: 40px
+				margin-right: 8px
+				&::placeholder
+					color: #c0c0c0
+					font-size: 14px
+			select
+				width: 10%
+				height: 40px
+				padding: 5px 25px
+				font-size: 14px
+				border: 1px solid #e6e6e6
+				color: #999
+				background-color: #fff
+				border-radius: 0
+				outline: none
+				margin-left: 1%
+				// appearance: none
+
+		.select_area
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 30px
+			p 
+				font-size: 16px
+				color: #888
+				margin-right: 10px
+			select
+				width: 150px
+				margin-right: 8px
+				height: 30px
+				font-size: 14px
+				color: #888
+
+		.seach_type
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			margin-bottom: 20px
+			.seach_type_item
+				margin-right: 20px
+				font-size: 16px
+				color: #888
+				display: flex
 				justify-content: flex-start
 				align-items: center
 				input[type=checkbox]

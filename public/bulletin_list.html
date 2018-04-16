@@ -68,6 +68,17 @@
 	})	
 
 	$(function(){
+		 $("#modal-search-site").iziModal({
+		 	  title: '搜尋本站',
+			  width: 900,
+			  radius: 0,
+			  overlayColor: 'rgba(0, 0, 0, 0.9)',
+			  closeOnEscape: true,
+		      closeButton: true,
+			});
+	})		
+
+	$(function(){
 		 $(".iziModal_search").iziModal({
 		 	  title: '進階搜尋',
 			  width: 900,
@@ -128,7 +139,6 @@
 				<li class="lil"></li>
 				<li><a href="#">意見信箱</a></li>				
 				<li class="lil"></li>
-
 				<div class="log_section trigger-custom" data-iziModal-open="#modal-custom">登入
 				</div>	
 	
@@ -168,7 +178,8 @@
 						<a href="">展覽資訊</a>
 					</li>	
 					<li>
-						<a href=""><i class="fas fa-search"></i></a>
+						<div class="search_site trigger-custom" data-iziModal-open="#modal-search-site"><i class="fas fa-search"></i></div>
+					
 					</li>
 					
 
@@ -185,21 +196,16 @@
 		<div class="aside">
 			
 
-
-
-
 			<ul>
-				<li>
-					<a href="" class="m-first">關於本站</a>
-					<a href="" class="m-first">館藏資源</a>
-					<a href="" class="m-first">主題特展</a>
-					<a href="" class="m-first">跨界行銷</a>
-					<a href="" class="m-first">互動資源</a>
-					<a href="" class="m-first">展覽資訊</a>
-					<a href="" class="m-first">全站檢索</a>
-				</li>	
+	
+					<li><a href="" class="m-first">關於本站</a></li>
+					<li><a href="" class="m-first">館藏資源</a></li>
+					<li><a href="" class="m-first">主題特展</a></li>
+					<li><a href="" class="m-first">跨界行銷</a></li>
+					<li><a href="" class="m-first">互動資源</a></li>
+					<li><a href="" class="m-first">展覽資訊</a></li>
+					<li><div class="m-first"><input type="text" placeholder="搜尋本站"></div></li>
 				
-
 		</div>
 
 
@@ -241,6 +247,21 @@
         	</div>
         </div>
     </div>
+
+
+
+    
+<div id="modal-search-site" class="iziModal_search">
+	<button data-izimodal-close="" class="icon-close" style="">X</button>
+
+	<div class="simple-search">
+	   
+	    <div class="search_area">
+	        <input type="text" placeholder="請輸入查詢值"> <a href="" class="submit">查詢</a>
+	    </div>
+	   
+	</div>
+</div>
 
 
 

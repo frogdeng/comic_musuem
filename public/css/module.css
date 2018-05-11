@@ -3157,7 +3157,7 @@ a {
 
 @media (min-width: 1000px) {
   .bread_crumbs {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     display: -ms-flexbox;
@@ -3427,7 +3427,7 @@ a {
 
 @media (min-width: 1000px) {
   .about_site {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 60px; }
@@ -3436,10 +3436,10 @@ a {
     display: block;
     clear: both; }
   .about_site .layout_aside {
-    width: 21.66667%;
+    width: 23.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
+    margin-left: 0.92593%;
+    margin-right: 0.92593%;
     padding: 0 10px; }
   .about_site .layout_aside ul li a {
     display: block;
@@ -3465,10 +3465,10 @@ a {
   .about_site .layout_aside ul li .subaside_menu ul li a:hover {
     color: #222; }
   .about_site .layout_content {
-    width: 71.66667%;
+    width: 73.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .about_site .layout_content .tab_menu {
     margin-bottom: 10px;
     padding: 20px 0;
@@ -3503,15 +3503,15 @@ a {
   .about_site .layout_content img {
     margin-bottom: 20px; }
   .about_site .relative_link {
-    width: 71.66667%;
+    width: 73.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .about_site .relative_link .link_block {
-    width: 30%;
+    width: 31.48148%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
+    margin-left: 0.92593%;
+    margin-right: 0.92593%;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -3583,7 +3583,7 @@ a {
 
 @media (min-width: 1000px) {
   .column_layout {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -3593,15 +3593,15 @@ a {
     display: block;
     clear: both; }
   .column_layout .i_aside {
-    width: 30%;
+    width: 31.48148%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .column_layout .i_content {
-    width: 63.33333%;
+    width: 64.81481%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; } }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; } }
 
 @media (min-width: 0px) {
   .post_classification_content {
@@ -3896,7 +3896,7 @@ a {
 
 @media (min-width: 1000px) {
   .post_classification_content {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto; }
   .post_classification_content:after {
@@ -4011,10 +4011,10 @@ a {
   .post_classification_content .classification_item .des .des_info {
     margin-top: 10px; }
   .post_classification_content .classification_item_block {
-    width: 30%;
+    width: 31.48148%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
+    margin-left: 0.92593%;
+    margin-right: 0.92593%;
     margin-bottom: 30px; }
   .post_classification_content .classification_item_block .photo {
     margin-bottom: 10px; }
@@ -4202,7 +4202,7 @@ a {
 
 @media (min-width: 1000px) {
   .post_classification_menu {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 20px;
@@ -4355,7 +4355,7 @@ a {
 
 @media (min-width: 1000px) {
   .pages {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
@@ -4467,7 +4467,7 @@ a {
 
 @media (min-width: 1000px) {
   .comic_detail {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px; }
@@ -4528,7 +4528,7 @@ a {
 
 @media (min-width: 1000px) {
   .comic_cover {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 30px;
@@ -4568,7 +4568,7 @@ a {
 
 @media (min-width: 1000px) {
   .t-title {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 28px;
@@ -4684,7 +4684,7 @@ a {
 
 @media (min-width: 1000px) {
   .works_classification {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 140px; }
@@ -4693,10 +4693,10 @@ a {
     display: block;
     clear: both; }
   .works_classification .works_column {
-    width: 30%;
+    width: 31.48148%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .works_classification .works_column .works {
     background: #189;
     margin-bottom: 20px;
@@ -4817,7 +4817,7 @@ a {
 
 @media (min-width: 1000px) {
   .theme_intro {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto; }
   .theme_intro:after {
@@ -4892,7 +4892,7 @@ a {
 
 @media (min-width: 1000px) {
   .theme_works {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto; }
   .theme_works:after {
@@ -4900,10 +4900,10 @@ a {
     display: block;
     clear: both; }
   .theme_works .works_col {
-    width: 21.66667%;
+    width: 23.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .theme_works .works_col .works_img {
     width: 100%;
     cursor: pointer;
@@ -4989,7 +4989,7 @@ a {
 
 @media (min-width: 1000px) {
   .lightbox_a {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto; }
   .lightbox_a:after {
@@ -5245,7 +5245,7 @@ a {
 
 @media (min-width: 1000px) {
   .simple-search {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -5598,7 +5598,7 @@ a {
 
 @media (min-width: 1000px) {
   .chronology {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 40px; }
@@ -6314,7 +6314,7 @@ a {
 
 @media (min-width: 1000px) {
   .search_by_timeline {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 20px;
@@ -6526,7 +6526,7 @@ a {
 
 @media (min-width: 1000px) {
   .pure_text {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 100px; }
@@ -6535,10 +6535,10 @@ a {
     display: block;
     clear: both; }
   .pure_text .pure_text_menu {
-    width: 21.66667%;
+    width: 23.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .pure_text .pure_text_menu ul li a {
     display: block;
     padding: 10px 10px;
@@ -6549,10 +6549,10 @@ a {
     color: #4A90E5;
     border-bottom: 3px solid #4A90E5; }
   .pure_text .pure_text_contnet {
-    width: 71.66667%;
+    width: 73.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .pure_text .pure_text_contnet h1 {
     font-size: 25px;
     margin-bottom: 20px;
@@ -6685,7 +6685,7 @@ a {
 
 @media (min-width: 1000px) {
   .bulletin {
-    max-width: 1200px;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
@@ -6704,10 +6704,10 @@ a {
     line-height: 1.5;
     margin-bottom: 10px; }
   .bulletin .new_news {
-    width: 96.66667%;
+    width: 98.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%;
+    margin-left: 0.92593%;
+    margin-right: 0.92593%;
     border: 1px solid #eee;
     padding: 30px;
     margin-bottom: 40px; }
@@ -6727,10 +6727,10 @@ a {
   .bulletin .new_news .news_item:hover {
     color: #222; }
   .bulletin .bulletin_detail {
-    width: 96.66667%;
+    width: 98.14815%;
     float: left;
-    margin-left: 1.66667%;
-    margin-right: 1.66667%; }
+    margin-left: 0.92593%;
+    margin-right: 0.92593%; }
   .bulletin .bulletin_detail .l-l {
     width: 100%;
     height: 3px;

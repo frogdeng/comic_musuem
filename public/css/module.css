@@ -3219,7 +3219,7 @@ a {
     border-bottom: 2px solid #eee;
     padding: 10px 0;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     transition: all .3s;
     color: #ff7b7b; }
   .about_site .layout_aside ul li a i {
@@ -3333,7 +3333,7 @@ a {
     border-bottom: 2px solid #eee;
     padding: 10px 0;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     transition: all .3s;
     color: #ff7b7b; }
   .about_site .layout_aside ul li a i {
@@ -3446,7 +3446,7 @@ a {
     border-bottom: 2px solid #eee;
     padding: 10px 0;
     font-size: 18px;
-    font-weight: 900;
+    font-weight: 400;
     transition: all .3s;
     color: #ff7b7b; }
   .about_site .layout_aside ul li a i {
@@ -3538,6 +3538,10 @@ a {
   .about_site .relative_link .link_block:hover .mask {
     height: 100%;
     background: rgba(0, 0, 0, 0.8); } }
+
+.on_self {
+  color: #888 !important;
+  font-weight: 900 !important; }
 
 @media (min-width: 0px) {
   .column_layout {
